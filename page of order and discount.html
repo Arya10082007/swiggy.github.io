@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Place Order & Discount</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background-color: #f7f7f7;
+margin: 0;
+padding: 40px;
+}
+.container {
+max-width: 600px;
+margin: auto;
+background: white;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+h2 {
+text-align: center;
+color: #e63946;
+margin-bottom: 25px;
+}
+.form-group {
+margin-bottom: 20px;
+}
+label {
+display: block;
+font-weight: 600;
+margin-bottom: 8px;
+color: #333;
+}
+input[type="text"], input[type="number"] {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 16px;
+}
+.apply-btn, .order-btn {
+display: block;
+width: 100%;
+padding: 14px;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+cursor: pointer;
+}
+.apply-btn {
+background-color: #2a9d8f;
+color: white;
+margin-top: 10px;
+}
+.order-btn {
+background-color: #e63946;
+color: white;
+margin-top: 30px;
+}
+.summary {
+background: #f1f1f1;
+padding: 15px;
+border-radius: 8px;
+margin-top: 20px;
+}
+.summary p {
+margin: 8px 0;
+font-weight: 500;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Place Your Order</h2>
+<div class="form-group">
+<label>Enter Item Total (â¹)</label>
+<input type="number" placeholder="e.g. 700">
+</div>
+<div class="form-group">
+<label>Apply Discount Code</label>
+<input type="text" placeholder="e.g. SAVE50">
+<button class="apply-btn" onclick="alert('Discount Applied: â¹50 off!')">Apply
+Discount</button>
+</div>
+<div class="summary">
+<p>Subtotal: â¹700</p>
+<p>Discount: -â¹50</p>
+<p><strong>Total Payable: â¹650</strong></p>
+</div>
+<button class="order-btn" onclick="alert('Order Placed Successfully!')">Place
+Order</button>
+</div>
+</body>
+</html>
